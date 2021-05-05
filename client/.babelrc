@@ -1,0 +1,22 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [
+    "syntax-class-properties",
+    ["transform-class-properties", {
+      "spec": true
+    }],
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "syntax-class-properties",
+        ["transform-class-properties", {
+          "spec": true
+        }],
+        ["@babel/plugin-transform-runtime", {
+          "polyfill": true
+        }]
+      ]
+    }
+  }
+}
