@@ -57,23 +57,7 @@ class AuthUserPopup extends React.Component {
       >
         <DialogContent>
           {/* Social Media Auth Area */}
-          <DialogContentText>Sign in with your social network account</DialogContentText>
-          <div className='popup-icons'>
-            <IconButton className='fa fa-facebook-square icon'
-              // href="https://localhost:3000/api/auth/provider/facebook/"
-              onClick={this.handleClosePopup}
-            />
-            <IconButton className='fa fa-google-plus-square icon'
-              onClick={this.handleProviderAuth('google')}
-            />
-            <IconButton className='fa fa-twitter-square icon'
-              onClick={this.handleProviderAuth('twitter')}
-            />
-            <IconButton className='fa fa-github-square icon'
-              onClick={this.handleProviderAuth('github')}
-            />
-          </div>
-          <DialogContentText>Or use your email</DialogContentText>
+          <DialogContentText>Sign in with your email</DialogContentText>
           {/* Tabs Area */}
           <SigninTab
             tabValue={this.state.tabValue}

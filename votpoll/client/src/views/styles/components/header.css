@@ -1,5 +1,5 @@
 #header {
-  background-color: #215e72;
+  background-color: #fa7f7f;
   color: white;
   width: 100%;
   height: 60px;
@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: rgb(37, 135, 201);
 }
 
 .header-logo, .header-nav {
@@ -35,7 +35,7 @@ a:hover {
 
 .header-logo-title {
   font-size: 2rem;
-  color: white;
+  color: rgb(9, 124, 201);
   font-weight: 100;
 }
 

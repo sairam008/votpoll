@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 
 
 class AboutPage extends Component {
@@ -52,34 +51,7 @@ class AboutPage extends Component {
             </ul>
           </Grid>
 
-          {/* Right Side Area */}
-          <Grid id='right' className='grid-item' item xs={12} sm={6}>
-            <h3 className='section-header' style={{ textAlign:'center'}}>
-              Creator
-            </h3>
-            <div className='about-list-item' style={{ display:'flex', justifyContent:'center' }}>
-              <Avatar
-                alt={this.props.creatorName}
-                src={this.props.creatorImgUrl}
-                style={{ width:100, height:100 }}
-              />
-            </div>
-            <div className='list-item author'>{this.props.creatorName}</div>
-            <div className='popup-icons' >
-              <IconButton className='fa fa-github icon' style={{ fontSize:'1.3rem' }}
-                href='https://github.com/answart'
-              />
-              <IconButton className='fa fa-linkedin-square icon' style={{ fontSize:'1.3rem' }}
-                href='https://www.linkedin.com/in/alexandra-swart-582a1235/'
-              />
-              <IconButton className='fa fa-envelope icon' style={{ fontSize:'1.3rem' }}
-                href='mailto:answart@sbcglobal.net.com'
-              />
-            </div>
-            <div className='list-item'>
-              <i className='fa fa-map-marker' />{' San Jose, CA'}
-            </div>
-          </Grid>
+         
         </Grid>
       </Grid>
     )

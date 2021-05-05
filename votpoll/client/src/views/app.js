@@ -16,7 +16,7 @@ import PollPage from './pages/poll-page';
 import PollsListPage from './pages/pollslist-page';
 // Import images
 import logoImgUrl from './static/images/logo.png';
-import homePageImgUrl from './static/images/william-iven-22449.jpg';
+import homePageImgUrl from './static/images/homePic.jpg';
 import creatorImgUrl from './static/images/creator.jpg';
 // Import actions
 import { userActions } from '../core/users';
@@ -61,7 +61,7 @@ class App extends Component {
   }
 
   render() {
-    const appName = 'Voting Redux';
+    const appName = 'Voting Poll';
     const authProvidedUser = () => console.log('auth provided user');
     const {
       authedUser,
