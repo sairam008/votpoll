@@ -1,5 +1,23 @@
 require('dotenv').config({ path: '../.env' });
+// import { P2cBalancer, RandomBalancer } from "load-balancers";
 
+// // TODO: Update this list with your proxies or virtual machines.
+// const proxies = ["https://localhost:5000",
+//                "https://localhost:5050"];
+
+// // Initializes the Power of 2 Choices (P2c) Balancer with ten proxies.
+// const balancer = new P2cBalancer(proxies.length);
+
+// // P2c Balancer is preferred over the Random Balancer.
+// // const balancer = new RandomBalancer(proxies.length);
+
+// for (let i = 0; i < 1e6; i++) {
+//   const proxy = proxies[balancer.pick()];
+
+//   // TODO: Use the assigned proxy to scrape a website,
+//   // shift traffic to a virtual machine etc.
+//   console.log(proxy);
+// }
 const server = require('./server');
 //=====================================
 //  LISTEN

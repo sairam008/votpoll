@@ -1,5 +1,6 @@
 require('dotenv').config({ path: '../.env' });
 
+const cors = require("cors");
 const express = require('express');
 const passport = require('passport');
 const configurePassport = require('./config/passport');
@@ -10,7 +11,7 @@ const configureDb = require('./config/database');
 const ENV_PRODUCTION = process.env.NODE_ENV === 'production';
 const app = express();
 
-
+app.use(cors())
 // ==========================================================
 //  INITIALIZE
 
